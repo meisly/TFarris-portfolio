@@ -1,0 +1,28 @@
+
+.navbar {
+    width: 70%;
+    margin: auto;
+}
+header {
+    background: #343a40;
+    margin-bottom: 10px;
+}
+
+.jumbotron {
+    background-color: rgb(247, 247, 247);
+}
+
+.card-title {
+    margin-top: 150px;
+}
+body {
+    height: 100%;
+
+}
+footer {
+    display: block;
+    margin-top: auto;
+}
+html, .container {
+    height: 100%;
+}
