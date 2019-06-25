@@ -7,7 +7,9 @@ header {
     background: #343a40;
     margin-bottom: 10px;
 }
-
+.avatar {
+    text-align: center;
+}
 .jumbotron {
     background-color: rgb(247, 247, 247);
 }
