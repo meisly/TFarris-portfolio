@@ -7,6 +7,9 @@ header {
     background: #343a40;
     margin-bottom: 10px;
 }
+.section-header {
+    margin: .5em;
+}
 .avatar {
     text-align: center;
 }
