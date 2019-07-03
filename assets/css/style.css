@@ -31,3 +31,6 @@ footer {
 html, .container {
     height: 100%;
 }
+a {
+    text-decoration: none;
+}
