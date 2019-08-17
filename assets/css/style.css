@@ -33,6 +33,10 @@ html, .container {
     height: 100%;
 }
 a {
-    
     text-decoration: none;
+    color: black;
+}
+
+a .contact-info {
+    color: #343a40;
 }
