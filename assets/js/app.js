@@ -13,10 +13,10 @@ function rand(low, high) {
 
 function createParticle(canvas) {
   const colour = {
-    r: 255,
-    g: randomNormal({ mean: 125, dev: 20 }),
-    b: 50,
-    a: rand(0, 1),
+    r: 150,
+    g: randomNormal({ mean: 90, dev: 20 }),
+    b: 90,
+    a: rand(0, .5),
   };
   return {
     x: -2,
