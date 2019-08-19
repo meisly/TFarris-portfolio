@@ -3,11 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans|Lexend+Peta|Libre+Caslon+Text&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -21,7 +24,8 @@
             </button>
             <div class="flex-row-reverse collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="index.html">About<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="index.html">About<span
+                            class="sr-only">(current)</span></a>
                     <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
                     <a class="nav-item nav-link" href="contact.html">Contact</a>
                     <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
@@ -29,21 +33,28 @@
             </div>
         </nav>
     </header>
+    <canvas id="particle-canvas"></canvas>
     <main class="container">
         <div class="row">
             <div class="col-md-2"></div>
-            <div class="col-md">
+            <div class="col-md about-me">
                 <div class="row">
                     <div class="col">
-                        <h2>About Me</h2>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-4 col-12 avatar">
-                        <img src="assets\images\avataaars.svg" align="center" height="150px" alt="">
+                    <div class="col-md-3 col-12 avatar">
+                        <img id="avatar" src="assets/images/avataaars.png" align="center" 
+                            alt="Picture of a person with short hair and  glasses sticking out their tongue">
                     </div>
-                    <div class="col-md-8 col-12">
-                        <p>Hi, I'm Tierra!</p>
+                    <div class="col-md-6 col-12 salutation">
+                        <h2 class="salut">Hi, I'm Tierra!</h2>
+                    </div>
+    
+                    <div class="col-md-12">
+                        <p><h3>
+                            I think programming is amazing!
+                        </h3></p>
                         <p>During the day I'm an intrepid science teacher but in the evenings I've been learning to
                             program. I started with Python because I heard that it was an easy language for beginners.
                             After I had been learning awhile I decided to attempt a personal project using Python. I
@@ -51,11 +62,11 @@
                             was not system to do this and my library was <em>huuge</em>. So I decided to create one
                             using Python! This was a challenging project for me and I learned a ton! Even better, it
                             worked!</p>
-                    </div>
-                    <div class="col-md-12">
+
                         <p> Lately my focus has shifted a little to web development. I started on FreeCodeCamp but I
                             wanted to kick things up a notch by joining a real, in-person bootcamp. It’s only been a
-                            couple of months, but so far, I’m having a ton of fun! Things are challenging (Hello, git and merge conflicts)
+                            couple of months, but so far, I’m having a ton of fun! Things are challenging (Hello, git
+                            and merge conflicts)
                             but it feels really great when things work and I get to make cool things like this website!
                             And when I go on Youtube and see all of the cool things that other people can do, I get
                             really excited about the future. I can't wait to learn all of the things!</p>
@@ -80,6 +91,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
