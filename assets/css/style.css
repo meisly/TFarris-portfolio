@@ -2,7 +2,7 @@
 /* ##################### PAN ########################## */
 html {
     --background-color: rgb(156, 156, 168);
-    font-family: 'Overlock', cursive;
+    font-family: 'Overlock', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .navbar {
     width: 70%;
@@ -133,7 +133,6 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Lexend Peta', sans-serif;
 
 }
 .contact-info {
