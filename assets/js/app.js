@@ -3,7 +3,7 @@ function normalPool(o){var r=0;do{var a=Math.round(normal({mean:o.mean,dev:o.dev
 
 const NUM_PARTICLES = 600;
 const PARTICLE_SIZE = 0.5; // View heights
-const SPEED = 20000; // Milliseconds
+const SPEED = 400000; // Milliseconds
 
 let particles = [];
 
