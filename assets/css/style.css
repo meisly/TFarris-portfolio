@@ -7,6 +7,7 @@ html {
 .navbar {
     width: 70%;
     margin: auto;
+    position: sticky;
     background: var(--background-color)!important;
 }
 .active {
@@ -19,11 +20,25 @@ header {
 .section-header {
     margin: .5em;
 }
-.container {
+.cont-1, .cont-2, .cont-3 {
+    width: 100vw;
+    padding-right: 5rem;
+    padding-left: 5rem;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.backcolor{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.backcolor-1 {
+    background: #615967c7;
+}
+.backcolor-2 {
+    background: #4f2751c4;
+    ;
 }
 body {
     height: 100%;
@@ -40,7 +55,16 @@ a {
     text-decoration: none;
     color: black;
 }
+.section-head {
+    color: white;
+    font-family: 'Overlock', cursive;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
 /* ##################### ABOUT ME ########################## */
+.con-1 {
+    height: 100vh;
+}
 .about-me {
     color: white;
     font-family: 'Overlock', cursive;
@@ -112,14 +136,33 @@ a {
     margin-top: 150px;
     padding: 2px;
 }
+.project-info {
 
+}
+.project {
+    color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bold {
+    font-weight: bold;
+}
+.bold a {
+    font: white;
+    text-decoration: underline;
+}
+.bold a ::hover {
+    font: blue;
+}
 /* ##################### CONTACT ########################## */
 
 .contact-info a {
     color: white;
 }
 .contact h2 {
-    line-height: .1;
+    margin-top: 1rem;
     font-size: 3rem;
 }
 .contact hr {
@@ -130,6 +173,7 @@ a {
     color: white;
 }
 .contact {
+    margin-top: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

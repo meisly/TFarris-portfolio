@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <header id="top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <a id="logo" class="navbar-brand" href="#">
                 Tierra Farris
             </a>
@@ -22,12 +22,11 @@
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="flex-row-reverse collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="flex-row-reverse collapse navbar-collapse fixed-top" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="index.html">About<span
-                            class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                    <a class="nav-item nav-link" href="contact.html">Contact</a>
+                    <a id="top-link" class="nav-item nav-link active" href="#top">About<span class="sr-only">(current)</span></a>
+                    <a id="port-link" class="nav-item nav-link" href="#portfolio">Portfolio</a>
+                    <a id="cont-link" class="nav-item nav-link" href="#contact">Contact</a>
                     <a class="nav-item nav-link" href="assets/files/TFarris Resume_public_Aug2019-Tech.pdf">Resume</a>
                     <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
                 </div>
@@ -35,28 +34,153 @@
         </nav>
     </header>
     <canvas id="particle-canvas"></canvas>
-    <main class="container">
-        <div class="row">
-            <div class="col-md about-me">
+    <main>
+        <div class="container con-1">
+            <div class="row">
+                <div class="col-md about-me">
+                    <div class="row">
+                        <div class="col">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5 col-12 avatar">
+                            <img id="avatar" src="assets/images/avataaars.png" align="center"
+                                alt="Picture of a person with short hair and  glasses sticking out their tongue">
+                        </div>
+                        <div class="col-md-7 col-12 salutation">
+                            <h2 class="section-head salut">Hi, I'm Tierra!</h2>
+                            <h3>
+                                I am becoming a web developer because I think coding is amazing! With a little knowledge
+                                and
+                                imagination you can make just about anything. If you want to see some of the projects
+                                I've
+                                worked on check out my
+                                <a role="button" href="#portfolio">portfolio...</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio-start" class="backcolor backcolor-1">
+            <div class="container con-2">
+                <div id="portfolio">
+                    <h2 class="section-head">Portfolio</h2>
+                </div>
                 <div class="row">
-                    <div class="col">
+                    <div class="col-md-6 col-12">
+                        <div class="card mb-4 shadow-sm">
+                            <a href="https://pure-reaches-64620.herokuapp.com"><img
+                                    class="bd-placeholder-img card-img-top"
+                                    src="assets\images\screenshot_friendzone.png" preserveAspectRatio="xMidYMid slice"
+                                    focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" project col-md-6 col-12">
+                        <p><u>Problem:</u> Create a friend finder app that connects users with other compatible people</p>
+                        <p><u>Solution:</u> Users enter their information and complete a short survey created using Bootstrap
+                            and JavaScript. Their results were compared to others using an api built with Node.js and
+                            Express and the most compatible user was returned.</p>
+                        <p><u>Technologies:</u> Node.js, Express, Heroku, Jscript, jQuery, HTML/CSS</p>
+                        <p class="bold links">Check it out on <a
+                                href="https://github.com/meisly/theFriendZone">Github</a> or find the app<a
+                                href="https://pure-reaches-64620.herokuapp.com"> here.</a>
+                        </p>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-5 col-12 avatar">
-                        <img id="avatar" src="assets/images/avataaars.png" align="center"
-                            alt="Picture of a person with short hair and  glasses sticking out their tongue">
+                    <div class="col-md-6 col-12">
+                        <div class="card mb-4 shadow-sm">
+                            <a href="https://andrewbrooking.github.io/Project-1/#"><img
+                                    class="bd-placeholder-img card-img-top" src="assets\images\get-out.png"
+                                    preserveAspectRatio="xMidYMid slice" focusable="false" role="img"
+                                    aria-label="Placeholder: Thumbnail">
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-md-7 col-12 salutation">
-                        <h2 class="salut">Hi, I'm Tierra!</h2>
-                        <h3>
-                            I am becoming a web developer because I think coding is amazing! With a little knowledge and
-                            imagination you can make just about anything. If you want to see some of the projects I've
-                            worked on check out my
-                            <a role="button" href="portfolio.html">portfolio...</a>
-                        </h3>
+                    <div class=" project col-md-6 col-12">
+                        <p><u>Problem:</u> Create a date planning application using information aggregated from multiple
+                            sources</p>
+                        <p><u>Solution:</u> In this project I used several APIs including the Google Places API, googles
+                            Geocoding API and the Songkick API. Users entered the date, the location and the type of
+                            activity they were interested in. These inputs were used to make several API queries and the
+                            results are aggregated and returned in the form of a list. The user can then select
+                            activities they would like to pursue and add them to their planner.</p>
+                        <p><u>Technologies:</u> Google Maps Platform, Jscript, jQuery, HTML/CSS</p>
+                        <p class="bold links">Check it out on <a
+                                href="https://github.com/AndrewBrooking/Project-1">Github</a> or find the app<a
+                                href="https://andrewbrooking.github.io/Project-1/#"> here.</a>
+                        </p>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="card text-white mb-4 shadow-sm">
+                            <a href="https://github.com/meisly/bamazon"><img class="bd-placeholder-img card-img-top"
+                                    src="assets/images/bamazon.png" preserveAspectRatio="xMidYMid slice"
+                                    focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                                </img>
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" project col-md-6 col-12">
+                        <p><u>Problem:</u> Create a command line application for inventory management with multiple user levels
+                        </p>
+                        <p><u>Solution:</u> I used Node.js to create a simple inventory management and ordering system for
+                            customers and managers. I chose the Inquirer package to create a simple, intuitive interface
+                            with appealing visuals and MySQL was used to keep track of inventory. </p>
+                        <p><u>Technologies:</u> MySQL, SQL database, Node.js, Jscript, Inquirer</p>
+                        <p class="bold links">Check it out on <a href="https://github.com/meisly/bamazon">Github</a>.
+                        </p>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="card mb-4 shadow-sm">
+                            <a href="https://meisly.github.io/RPS-Multi/"><img class="bd-placeholder-img card-img-top"
+                                    src="assets\images\chat-game.png" preserveAspectRatio="xMidYMid slice"
+                                    focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" project col-md-6 col-12">
+                        <p><u>Problem:</u> Create an online chat with simple, gaming capabilities</p>
+                        <p><u>Solution:</u> I created a simple rock, paper, scissors game that can be played within a chatroom.
+                            Games are narrated by a chatbox. The chatroom utilizes a Firebase NoSQL database.</p>
+                        <p><u>Technologies:</u> Firebase No-SQL database, Jscript, jQuery, HTML/CSS</p>
+                        <p class="bold links">Check it out on <a href="https://github.com/meisly/RPS-Multi">Github</a>
+                            or find the app<a href="https://meisly.github.io/RPS-Multi/"> here.</a>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-start" class="backcolor backcolor-2">
+            <div class="container cont-3 contact">
+                <div id="contact" class="row contact-info">
+                    <div class="col-md-12">
+                        <h2>I'd love to hear from you</h2>
+                    </div>
+                    <hr>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 col-12 ">
+                        <div>
+                            <strong>Send me an email at</strong> <a
+                                href="mailto:trafarris@gmail.com">trafarris@gmail.com</a>
+                        </div>
+                        <div>
+                            <strong>Or check out my github: </strong><a
+                                href="https://github.com/meisly">Meisly@Github</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+
             </div>
         </div>
     </main>

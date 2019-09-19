@@ -6,6 +6,7 @@ const PARTICLE_SIZE = 0.5; // View heights
 const SPEED = 400000; // Milliseconds
 
 let particles = [];
+let elements = {};
 
 function rand(low, high) {
   return Math.random() * (high - low) + low;
@@ -102,6 +103,37 @@ function startAnimation() {
   requestAnimationFrame((time) => draw(time, canvas, ctx));
 };
 
+function bindEvents() {
+  $(window).on("scroll", function() {
+    const scroll = $(this).scrollTop();
+    const portOffset = elements.portfolioStart.offset().top;
+    const contOffset = elements.contactStart.offset().top;
+    
+    elements.navLinks.removeClass("active");
+
+    if(contOffset - scroll < 0) {
+      elements.contactLink.addClass("active");
+    }
+    else if(portOffset - scroll < 0) {
+      elements.portfolioLink.addClass("active");
+    }
+    else {
+      elements.topLink.addClass("active");
+    }
+  });
+}
+
+function setupElements() {
+  elements = {
+    portfolioStart: $("#portfolio-start"),
+    contactStart: $("#contact-start"),
+    topLink: $("#top-link"),
+    portfolioLink: $("#port-link"),
+    contactLink: $("#cont-link"),
+    navLinks: $("#navbarNavAltMarkup .nav-link")
+  };
+}
+
 // Start animation when document is loaded
 (function () {
   if (document.readystate !== 'loading') {
@@ -112,3 +144,8 @@ function startAnimation() {
     })
   }
 }());
+
+$(document).ready(() => {
+  setupElements();
+  bindEvents();
+});
