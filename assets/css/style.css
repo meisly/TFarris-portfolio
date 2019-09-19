@@ -29,6 +29,17 @@ header {
     flex-direction: column;
     justify-content: center;
 }
+.backcolor{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.backcolor-1 {
+    background: #615967c7;
+}
+.backcolor-2 {
+    background: #4f2751c4;
+    ;
+}
 body {
     height: 100%;
     background: var(--background-color);
@@ -130,7 +141,20 @@ a {
 }
 .project {
     color: white;
-    text-align: center;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bold {
+    font-weight: bold;
+}
+.bold a {
+    font: white;
+    text-decoration: underline;
+}
+.bold a ::hover {
+    font: blue;
 }
 /* ##################### CONTACT ########################## */
 
@@ -138,7 +162,7 @@ a {
     color: white;
 }
 .contact h2 {
-    line-height: .1;
+    margin-top: 1rem;
     font-size: 3rem;
 }
 .contact hr {
