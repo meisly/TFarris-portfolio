@@ -150,11 +150,17 @@ a {
     font-weight: bold;
 }
 .bold a {
-    font: white;
+    color: white;
     text-decoration: underline;
 }
 .bold a ::hover {
-    font: blue;
+    color: blue;
+}
+.project u {
+    font-weight: bold;
+}
+.project-row {
+    margin-bottom: 2rem;
 }
 /* ##################### CONTACT ########################## */
 
