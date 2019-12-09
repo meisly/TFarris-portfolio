@@ -8,7 +8,7 @@ html {
     width: 70%;
     margin: auto;
     position: sticky;
-    background: var(--background-color)!important;
+    background-color: var(--background-color)!important;
 }
 .active {
     color: #e05816!important;
