@@ -10,6 +10,9 @@ html {
     position: sticky;
     background-color: var(--background-color)!important;
 }
+.navbar-collapse {
+    background-color: var(--background-color)!important;
+}
 .active {
     color: #e05816!important;
 }
