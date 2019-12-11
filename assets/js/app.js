@@ -111,10 +111,10 @@ function bindEvents() {
     
     elements.navLinks.removeClass("active");
 
-    if(contOffset - scroll < 0) {
+    if(contOffset - scroll <= 2) {
       elements.contactLink.addClass("active");
     }
-    else if(portOffset - scroll < 0) {
+    else if(portOffset - scroll <= 0) {
       elements.portfolioLink.addClass("active");
     }
     else {
